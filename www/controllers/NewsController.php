@@ -7,7 +7,7 @@
  * Time: 12:46
  */
 
-  require_once __DIR__ . '/../models/news.php';
+ // require_once __DIR__ . '/../models/news.php';
 class NewsController
 {
     public function actionAll() {
