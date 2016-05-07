@@ -25,7 +25,12 @@ class NewsController
 
         $id = $_GET['id'];
         $item = News::getOne($id);
-        include __DIR__ . '/../view/news/one.php';
+               $view = new View();
+        $view->assign('item', $item);
+        $view->display('news/one.php');
+
+
+       // include __DIR__ . '/../view/news/one.php';
     }
 
 }
